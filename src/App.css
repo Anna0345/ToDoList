@@ -1,0 +1,67 @@
+
+
+.allItems {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  height: 100%;
+}
+.InputValues {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputSpace {
+  width: 200px;
+  height: 30px;
+  border-style:groove;
+  margin-right: 10px;
+}
+
+.addItem {
+  color: rgb(222, 222, 233);
+  background-color: rgb(22, 22, 92);
+  border-radius: 20%;
+  height: 30px;
+  width: 80px;
+  margin-left: 10px;
+}
+
+
+body{
+  display: flex;
+  justify-content: center;
+}
+li{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ListName{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  color:rgb(170, 40, 40);
+}
+
+ul{
+  list-style-type:none;
+}
+.Tasks{
+  padding: 10px;
+  margin: auto;
+}
+.DeleteItem{
+ padding: 10px;
+ color: rgb(236, 227, 227);
+ border-radius: 20%;
+ background-color: rgb(131, 16, 16);
+ border: none;
+ margin: 5px;
+ cursor: pointer;
+
+}
+
+
