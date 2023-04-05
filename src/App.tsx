@@ -34,8 +34,8 @@ function App() {
        <ul className="lists">
         {todos.map((todo) => (
           <li key={todo.id}>
-            <input type="checkbox" className = "checkbox"checked={todo.completed} onChange={() => handleToggleTodo(todo.id)} />
-            <span style={{ textDecoration: todo.completed ? "line-through" : "none" }} className="Tasks">
+            <input type="checkbox" className = "checkbox" checked={todo.completed} onChange={() => handleToggleTodo(todo.id)} />
+            <span style={{ textDecoration: todo.completed ? "line-through" : "none" , color: todo.completed ? "gray ": "black"}} className="Tasks">
               {todo.text}
             </span>
             <button onClick={() => handleDeleteTodo(todo.id)} className="DeleteItem">Delete</button>
