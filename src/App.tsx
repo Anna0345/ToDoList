@@ -15,11 +15,11 @@ function App() {
     }
   };
 
-  const handleToggleTodo = (id: number) => {
+  const handleToggleTodo = (id: string) => {
     dispatch(toggleTodo(id));
   };
 
-  const handleDeleteTodo = (id: number) => {
+  const handleDeleteTodo = (id: string) => {
     dispatch(deleteTodo(id));
   };
 
