@@ -40,9 +40,13 @@ body{
   pointer-events: none;
 }
 
+
+
 li {
   display: flex;
-  max-width: 400px;
+  max-width: 350px;
+  margin-right: auto;
+ 
 }
 
 .ListName{
@@ -56,12 +60,14 @@ li {
 
 ul{
   list-style-type:none;
+
 }
 .Tasks{
   font-family:'Source Code Pro', monospace;
-  padding: 10px;
+  font-size: 1.2em;
+  padding: 15px;
   word-break: break-all;
-  margin: auto;
+  margin-right: auto;
 }
 .DeleteItem{
  max-width: 80px;
