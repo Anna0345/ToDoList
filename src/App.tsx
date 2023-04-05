@@ -28,7 +28,7 @@ function App() {
      <h2 className = 'ListName'>To-Do List</h2>
       <div className="InputValues">
         <input type="text" className="inputSpace" value={inputText} onChange={(e) => setInputText(e.target.value)} />
-        <button className="addItem" onClick={handleAddTodo} >Add Task</button>
+        <button disabled={inputText.length === 0}className="addItem" onClick={handleAddTodo} >Add Task</button>
       </div>
       <div className="AddedValues">
        <ul className="lists">

@@ -1,5 +1,8 @@
 
-
+body{
+  display: flex;
+  justify-content: center;
+}
 .allItems {
   display: flex;
   flex-direction: column;
@@ -22,18 +25,20 @@
 
 .addItem {
   color: rgb(222, 222, 233);
-  background-color: rgb(22, 22, 92);
+  background-color: rgb(68, 126, 141);
   border-radius: 20%;
-  height: 30px;
+  height: 40px;
   width: 80px;
   margin-left: 10px;
+  cursor: pointer;
+}
+.addItem:hover {
+  color: rgb(13, 36, 54);
+}
+.addItem:disabled {
+  pointer-events: none;
 }
 
-
-body{
-  display: flex;
-  justify-content: center;
-}
 li{
   display: flex;
   justify-content: space-between;
