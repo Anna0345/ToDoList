@@ -3,34 +3,33 @@
 
 body{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .allItems {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  height: 100%;
 }
 .InputValues {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  overflow: auto;
 }
 
 .inputSpace {
-  width: 200px;
+  width: 300px;
   height: 30px;
   border-style:groove;
   margin-right: 10px;
+  overflow: auto;
 }
 
 .addItem {
-  color: rgb(222, 222, 233);
-  background-color: rgb(68, 126, 141);
-  border-radius: 20%;
-  height: 40px;
-  width: 80px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 28px;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -41,9 +40,9 @@ body{
   pointer-events: none;
 }
 
-li{
+li {
   display: flex;
-  justify-content: space-between;
+  max-width: 400px;
 }
 
 .ListName{
@@ -61,9 +60,12 @@ ul{
 .Tasks{
   font-family:'Source Code Pro', monospace;
   padding: 10px;
+  word-break: break-all;
   margin: auto;
 }
 .DeleteItem{
+ max-width: 80px;
+ max-height: 40px;
  padding: 10px;
  color: rgb(236, 227, 227);
  border-radius: 20%;

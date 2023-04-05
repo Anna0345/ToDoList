@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addTodo, toggleTodo, deleteTodo, selectTodos } from "./features/toDoSlice";
+import {FaPlus} from 'react-icons/fa'
 import './App.css'
 
 function App() {
@@ -27,8 +28,8 @@ function App() {
     <div className="allItems">
      <h2 className = 'ListName'>To-Do List</h2>
       <div className="InputValues">
-        <input type="text" className="inputSpace" value={inputText} onChange={(e) => setInputText(e.target.value)} />
-        <button disabled={inputText.length === 0}className="addItem" onClick={handleAddTodo} >Add Task</button>
+       <input type="text" className="inputSpace" value={inputText} onChange={(e) => setInputText(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') handleAddTodo() }} />
+        <button disabled={inputText.length === 0}className="addItem" onClick={handleAddTodo} ><FaPlus /></button>
       </div>
       <div className="AddedValues">
        <ul className="lists">
